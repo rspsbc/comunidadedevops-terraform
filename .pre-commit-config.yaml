@@ -2,7 +2,10 @@ repos:
 -   repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.91.0
     hooks:
+    #terraform fmt -recursive -check, to check identation errors
     - id: terraform_fmt
       args:
         - --args=-recursive
+    #terraform validade to check type errors
     - id: terraform_validate
+    
