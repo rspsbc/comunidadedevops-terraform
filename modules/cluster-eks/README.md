@@ -7,8 +7,8 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.50.0 |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | 4.0.4 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.55.0 |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | 4.0.5 |
 
 ## Modules
 
@@ -29,6 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_k8s-version"></a> [k8s-version](#input\_k8s-version) | Versão do Kubernetes | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name to be used to name the resources (Name tag) | `string` | n/a | yes |
 | <a name="input_public_subnet_1a"></a> [public\_subnet\_1a](#input\_public\_subnet\_1a) | Subnet to create EKS cluster AZ 1a | `string` | n/a | yes |
 | <a name="input_public_subnet_1b"></a> [public\_subnet\_1b](#input\_public\_subnet\_1b) | Subnet to create EKS cluster AZ 1b | `string` | n/a | yes |
