@@ -5,7 +5,7 @@ variable "project_name" {
 
 variable "tags" {
   type        = map(any)
-  description = "Tags to be added to asw resourses"
+  description = "Tags to be added to AWS resources"
 }
 
 variable "cluster_name" {
@@ -21,4 +21,24 @@ variable "subnet_private_1a" {
 variable "subnet_private_1b" {
   type        = string
   description = "Subnet ID from AZ 1b"
+}
+
+variable "desired_size" {
+  type        = string
+  description = "desired nodes"
+}
+
+variable "max_size" {
+  type        = string
+  description = "max nodes"
+}
+
+variable "min_size" {
+  type        = string
+  description = "desired nodes"
+}
+
+variable "k8s-version" {
+  type        = string
+  description = "Versão do Kubernetes"
 }

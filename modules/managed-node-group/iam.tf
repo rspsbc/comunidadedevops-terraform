@@ -1,8 +1,6 @@
 resource "aws_iam_role" "eks_mng_role" {
   name = "${var.project_name}-mng-role"
 
-  # Terraform's "jsonencode" function converts a
-  # Terraform expression result to valid JSON syntax.
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -40,7 +38,7 @@ resource "aws_iam_role_policy_attachment" "eks_mng_role_attachment_cni" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
 }
 
-resource "aws_iam_role_policy_attachment" "eks_mng_role_attachment_ec2" {
+resource "aws_iam_role_policy_attachment" "eks_mng_role_ec2" {
   role       = aws_iam_role.eks_mng_role.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
 }
