@@ -8,4 +8,7 @@ repos:
         - --args=-recursive
     #terraform validade to check type errors
     - id: terraform_validate
+    - id: terraform_docs
+      args:
+        - --args=--output-file README.md
     
