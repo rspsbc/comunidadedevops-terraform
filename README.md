@@ -38,6 +38,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | Networking CIDR block to be used for the VPC | `string` | n/a | yes |
+| <a name="input_demo"></a> [demo](#input\_demo) | Demo | `string` | n/a | yes |
 | <a name="input_desired_size"></a> [desired\_size](#input\_desired\_size) | desired nodes | `string` | n/a | yes |
 | <a name="input_k8s-version"></a> [k8s-version](#input\_k8s-version) | Versão do Kubernetes | `string` | n/a | yes |
 | <a name="input_max_size"></a> [max\_size](#input\_max\_size) | max nodes | `string` | n/a | yes |
